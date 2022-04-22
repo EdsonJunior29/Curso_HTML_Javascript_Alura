@@ -26,11 +26,15 @@
             
         }
 
-        let imcJose = calculaIMc(1.71 , 80);
-        let imcJoao = calculaIMc(1.80 , 90);
+        //Receber entrada de dados do usuário.
+        let nome = prompt("Digite seu nome: ");
+        let alturaDoUsuario = prompt(nome + " informe sua altura: ");
+        let pesoDoUsuario = prompt(nome + " informe seu peso: ");
 
-        exibir("Jose: " + imcJose);
-        exibir("Joao: " + imcJoao);
+        let calculoImcUsuario = calculaIMc(alturaDoUsuario , pesoDoUsuario);
+
+        document.write(nome  + " seu IMC é de: " + calculoImcUsuario);
+        
 
     </script>
 </body>
