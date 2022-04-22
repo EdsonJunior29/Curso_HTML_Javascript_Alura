@@ -21,7 +21,8 @@
         }
 
         function calcularMediaEntre3Valores(valor1, valor2, valor3){
-            return (valor1 + valor2 + valor3) / 3;
+            pularLinha();
+            return(valor1 + valor2 + valor3) / 3 ;
         }
 
         var ano = 2022;
@@ -46,9 +47,9 @@
         let idadeJoaquim = 30;
         let idadeJunior = 50;
         let media = calcularMediaEntre3Valores(idadePedro, idadeJoaquim, idadeJunior);
-        document.write("Calcular média de idade: " + Math.round(media));
+        document.write("Calcular média de idade: " + Math.round(media) + "<br>");
 
-        document.write("<br> Flávio tem :  " + (2022 - 1989) + " Anos.");
+        document.write(" Flávio tem :  " + (2022 - 1989) + " Anos.");
         
     </script>
 </html>
