@@ -15,19 +15,28 @@
 
     <script>
 
+        function pularLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
         var ano = 2022;
 
         alert("Isso é um código em JavaScript");
 
-        document.write("<br>");
+        pularLinha();
         document.write("A idade do Edson é: ");
         document.write(ano - 1989 + "<br>");
         document.write("A idade do Pedro é: ");
         document.write(ano - 1977 + "<br>");
         document.write("A idade do Joaquin é: ");
-        document.write(ano - 1990 + "<br>");
+        document.write(ano - 1990);
+        pularLinha();
+
         document.write("A idade do Junior é: ");
-        document.write(ano - 2018 + "<br>");
+        document.write(ano - 2018);
+
+        pularLinha();
 
         let idadePedro = 20;
         let idadeJoaquim = 30;
