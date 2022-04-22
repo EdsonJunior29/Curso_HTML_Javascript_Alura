@@ -14,10 +14,15 @@
     </body>
 
     <script>
+        var ano = 2022;
 
         function pularLinha(){
             document.write("<br>");
             document.write("<br>");
+        }
+
+        function mostrar(frase){
+            document.write(frase);
         }
 
         function calcularMediaEntre3Valores(valor1, valor2, valor3){
@@ -25,22 +30,23 @@
             return(valor1 + valor2 + valor3) / 3 ;
         }
 
-        var ano = 2022;
-
         alert("Isso é um código em JavaScript");
 
         pularLinha();
-        document.write("A idade do Edson é: ");
-        document.write(ano - 1989 + "<br>");
-        document.write("A idade do Pedro é: ");
-        document.write(ano - 1977 + "<br>");
-        document.write("A idade do Joaquin é: ");
+        mostrar("A idade do Edson é: ");
+        document.write(ano - 1989);
+        pularLinha();
+
+        mostrar("A idade do Pedro é: ");
+        document.write(ano - 1977 );
+        pularLinha();
+
+        mostrar("A idade do Joaquin é: ");
         document.write(ano - 1990);
         pularLinha();
 
-        document.write("A idade do Junior é: ");
+        mostrar("A idade do Junior é: ");
         document.write(ano - 2018);
-
         pularLinha();
 
         let idadePedro = 20;
