@@ -13,7 +13,7 @@
 
     <script>
         function pulaLinha(){
-            document.write("<br>")
+            document.write("<br><br>")
         }
 
         function exibir(texto){
@@ -31,10 +31,19 @@
         let alturaDoUsuario = prompt(nome + " informe sua altura: ");
         let pesoDoUsuario = prompt(nome + " informe seu peso: ");
 
-        let calculoImcUsuario = calculaIMc(alturaDoUsuario , pesoDoUsuario);
+        let calculoImcUsuario = Math.round(calculaIMc(alturaDoUsuario , pesoDoUsuario));
 
         document.write(nome  + " seu IMC é de: " + calculoImcUsuario);
-        
+        pulaLinha();
+
+        if(calculoImcUsuario < 18.5){
+            exibir("Você está abaixo da média.")
+        }else if(calculoImcUsuario >= 18.5 && calculoImcUsuario <= 35){
+            exibir("Você está na média.")
+
+        } else{
+            exibir("Você está acima da média.")
+        }
 
     </script>
 </body>
