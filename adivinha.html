@@ -15,12 +15,17 @@
     <script>
         let valor = 5;
         let input = document.querySelector("input");
-
-        if(input.value == valor){
-            alert("Acertou!!!!");
-        } else {
-            alert("Errou !!!!!");
+        
+        function verifica(){
+            if(input.value == valor){
+                alert("Acertou!!!!");
+            } else {
+                alert("Errou !!!!!");
+            }
         }
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
     </script>
 </body>
 </html>
