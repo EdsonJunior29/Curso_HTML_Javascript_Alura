@@ -13,8 +13,10 @@
     <button>Compare com o meu segredo</button>
 
     <script>
-        let valor = 5;
+        //Criar números aleatórios
+        let valor = Math.round(Math.random() * 10);
         let input = document.querySelector("input");
+        input.focus();
         
         function verifica(){
             if(input.value == valor){
@@ -22,6 +24,8 @@
             } else {
                 alert("Errou !!!!!");
             }
+            input.value = "";
+            input.focus();
         }
 
         var button = document.querySelector("button");
